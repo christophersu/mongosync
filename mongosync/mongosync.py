@@ -1,5 +1,3 @@
-import json
-
 # Syncs a MongoDB collection with a list of dictionaries
 # 
 # Collection should be from PyMongo
@@ -16,4 +14,5 @@ def sync(collection, data, key):
 # JSON data should be an array of dictionaries
 # Key should be the field of the dictionaries to key by
 def sync_json(collection, json, key):
+    import json
     sync(collection, json.loads(json), key)

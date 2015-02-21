@@ -1,1 +1,1 @@
-from mongosync import sync
+from mongosync import sync, sync_json
